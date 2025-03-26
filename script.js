@@ -72,8 +72,8 @@ function newGame() {
     scoreRight = 0
     teamLeft.innerHTML = scoreLeft
     teamRight.innerHTML = scoreRight
-    highLeft.style.color = "#acacac";
-    highRight.style.color = "#acacac";
+    highLeft.style.color = "#acacac"
+    highRight.style.color = "#acacac"
 }
 
 
@@ -101,34 +101,35 @@ function enlargeTeamAvRight() {
 }
 
 function colorPointsLeft() {
-    teamLeft.style.backgroundColor = "#bcbcbc";
+    teamLeft.style.backgroundColor = "#bcbcbc"
     setTimeout(() => {
-        teamLeft.style.backgroundColor = "#acacac";
+        teamLeft.style.backgroundColor = "#acacac"
     }, 150);
 }
 
 function colorPointsRight() {
-    teamRight.style.backgroundColor = "#bcbcbc";
+    teamRight.style.backgroundColor = "#bcbcbc"
     setTimeout(() => {
-        teamRight.style.backgroundColor = "#acacac";
+        teamRight.style.backgroundColor = "#acacac"
     }, 150);
 }
 
 
 // High Score
 
-let highLeft = document.getElementById("high-left");
-let highRight = document.getElementById("high-right");
+let highLeft = document.getElementById("high-left")
+let highRight = document.getElementById("high-right")
 
-let currentlyHighlighted = null;
+let currentlyHighlighted = null
 
 function highlightHigherScore() {
-    highRight.style.color = "#acacac";
+    highLeft.style.color = "#acacac"
+    highRight.style.color = "#acacac"
     
     if (scoreLeft > scoreRight) {
-        highLeft.style.color = "#B5AB3D";
+        highLeft.style.color = "#B5AB3D"
     } else if (scoreRight > scoreLeft) {
-        highRight.style.color = "#B5AB3D";
+        highRight.style.color = "#B5AB3D"
     } else {
         highLeft.style.color = "rgb(180, 60, 60)"
         highRight.style.color = "rgb(180, 60, 60)"
