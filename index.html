@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="score-row">
+            <div class="score">
+                <div class="team">
+                    <div class="team-avatar celtics" id="team-av-left"></div>
+                    <h2 id="high-left">Bos</h2>
+                </div>
+                <div class="points">
+                    <div class="point-container points-left"><button class="btn-point" onclick="addLeft1()">+1</button></div>
+                    <div class="point-container points-left"><button class="btn-point" onclick="addLeft2()">+2</button></div>
+                    <div class="point-container points-left"><button class="btn-point" onclick="addLeft3()">+3</button></div>
+                </div>
+            </div>
+            <div class="score-counter">
+                <div class="score-container" id="team-left"><p>0</p></div>
+                <div class="score-container" id="team-right"><p>0</p></div>
+            </div>
+            <div class="score">
+                <div class="team">
+                    <h2 id="high-right">Phi</h2>
+                    <div class="team-avatar philly" id="team-av-right"></div>
+                    
+                </div>
+                <div class="points">
+                    <div class="point-container points-right"><button class="btn-point" onclick="addRight1()">+1</button></div>
+                    <div class="point-container points-right"><button class="btn-point" onclick="addRight2()">+2</button></div>
+                    <div class="point-container points-right"><button class="btn-point" onclick="addRight3()">+3</button></div>
+                </div>
+            </div>
+        </div>
+    <button class="btn-new-game" onclick="newGame()"><h3>New Game</h3></button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
